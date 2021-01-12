@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 30px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(harmanjot-kaur-tHjcI05WFK0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+
+}
+
+.content {
+    width: 85%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.image {
+    width: 120px;
+
+}
+
+.content ul li {
+
+    list-style: none;
+    margin: 0 15px;
+    display: inline-block;
+    position: relative;
+
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+
+}
+
+.content ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.content ul li:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+
+}
+
+.text h1 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.text p {
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.5rem;
+    font-size: 16px;
+}
+
+.btn {
+    margin: 20px 10px;
+    padding: 15px 0;
+    width: 200px;
+    background: transparent;
+    border: 2px solid #009688;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+span {
+    height: 100%;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    width: 100%;
+
+}
+
+.btn:hover {
+    border: none;
+}
